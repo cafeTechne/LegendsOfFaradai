@@ -1,36 +1,136 @@
 {
   "attributes": {
-    "strength": {
-      "delta": 0,
-      "base": 17
-    },
-    "agility": {
-      "delta": 0,
-      "base": 10
-    },
-    "intellect": {
-      "delta": 0,
-      "base": 8
-    },
-    "stamina": {
-      "delta": 0,
-      "base": 11
-    },
     "health": {
       "delta": 0,
-      "base": 154
+      "base": 100
     },
-    "armor": {
+    "Armor": {
+      "delta": 0,
+      "base": 0
+    },
+    "Agility": {
+      "delta": 0,
+      "base": 50
+    },
+    "Kinesthetic_IQ": {
+      "delta": 0,
+      "base": 50
+    },
+    "Crystallized_IQ": {
+      "delta": 0,
+      "base": 50
+    },
+    "Fluid_IQ": {
+      "delta": 0,
+      "base": 50
+    },
+    "Spatiality": {
+      "delta": 0,
+      "base": 50
+    },
+    "Musicality": {
+      "delta": 0,
+      "base": 50
+    },
+    "Logicality": {
+      "delta": 0,
+      "base": 50
+    },
+    "Sociality": {
+      "delta": 0,
+      "base": 50
+    },
+    "Intrapersonality": {
+      "delta": 0,
+      "base": 50
+    },
+    "Street_Wisdom": {
+      "delta": 0,
+      "base": 50
+    },
+    "Moral_Intelligence": {
+      "delta": 0,
+      "base": 50
+    },
+    "Anaerobic_Strength": {
+      "delta": 0,
+      "base": 50
+    },
+    "Aerobic_Strength": {
+      "delta": 0,
+      "base": 50
+    },
+    "Explosive_Strength": {
+      "delta": 0,
+      "base": 50
+    },
+    "Physical_Endurance": {
+      "delta": 0,
+      "base": 50
+    },
+    "Social_Endurance": {
+      "delta": 0,
+      "base": 50
+    },
+    "Mental_Endurance": {
+      "delta": 0,
+      "base": 50
+    },
+    "Determination": {
+      "delta": 0,
+      "base": 50
+    },
+    "Sensation_Seeking": {
+      "delta": 0,
+      "base": 50
+    },
+    "Sense_Probability": {
+      "delta": 0,
+      "base": 50
+    },
+    "Self_Confidence": {
+      "delta": 0,
+      "base": 50
+    },
+    "Impulsivity": {
+      "delta": 0,
+      "base": 50
+    },
+    "Neuroticism": {
+      "delta": 0,
+      "base": 50
+    },
+    "Empathy": {
+      "delta": 0,
+      "base": 50
+    },
+    "Sociopathy": {
+      "delta": 0,
+      "base": 50
+    },
+    "Open_Mindedness": {
+      "delta": 0,
+      "base": 50
+    },
+    "Conscientiousness": {
+      "delta": 0,
+      "base": 50
+    },
+    "Extraversion": {
+      "delta": 0,
+      "base": 50
+    },
+    "Agreeableness": {
+      "delta": 0,
+      "base": 50
+    },
+    "Critical": {
       "delta": 0,
       "base": 0
     },
     "energy": {
       "delta": 0,
       "base": 100
-    },
-    "critical": {
-      "delta": 0,
-      "base": 0
     }
   },
   "level": 1,
@@ -51,13 +151,13 @@
         "type": "regen",
         "unique": true
       },
-      "elapsed": 2266349,
+      "elapsed": 3665455,
       "id": "regen",
       "remaining": null,
       "state": {
         "magnitude": 15,
-        "lastTick": 508,
-        "ticks": 754
+        "lastTick": 1611,
+        "ticks": 1219
       }
     }
   ],

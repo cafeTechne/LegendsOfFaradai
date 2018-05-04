@@ -16,6 +16,10 @@
     {
       "username": "Porthos",
       "deleted": false
+    },
+    {
+      "username": "Menao",
+      "deleted": false
     }
   ],
   "password": "$2a$10$IaR0QH6VLiBcT8DtJnBLmeKMJiVYt6l3B4gwhDO5TwZD/XpWZu4Iu",

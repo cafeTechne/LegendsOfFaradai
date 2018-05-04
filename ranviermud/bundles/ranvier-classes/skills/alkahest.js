@@ -1,22 +1,23 @@
 'use strict';
 
 /**
- * Basic mage spell
+ * Tier 2 Transmutor spell
  */
 module.exports = (srcPath) => {
   const Broadcast = require(srcPath + 'Broadcast');
   const Damage = require(srcPath + 'Damage');
   const SkillType = require(srcPath + 'SkillType');
 
-  const damagePercent = 100;
-  const manaCost = 20;
+  const damagePercent = Math.floor((Math.random() * 100) + 1); //rng 1-100
+  let randomBase =  Math.floor((Math.random() * 100) + 1); //rng 1-100
+  const manaCost = 100;
 
   function getDamage(player) {
-    return player.getAttribute('intellect') * (damagePercent / 100);
+    return player.getAttribute('Crystallized_Intelligence') *(.25) *(damagePercent / random);
   }
 
   return {
-    name: 'Fireball',
+    name: 'Alkahest',
     type: SkillType.SPELL,
     requiresTarget: true,
     initiatesCombat: true,
@@ -24,7 +25,7 @@ module.exports = (srcPath) => {
       attribute: 'mana',
       cost: manaCost,
     },
-    cooldown: 10,
+    cooldown: 15,
 
     run: state => function (args, player, target) {
       const damage = new Damage({
@@ -35,16 +36,16 @@ module.exports = (srcPath) => {
         source: this
       });
 
-      Broadcast.sayAt(player, '<bold>With a wave of your hand, you unleash a <red>fire</red></bold><yellow>b<bold>all</bold></yellow> <bold>at your target!</bold>');
-      Broadcast.sayAtExcept(player.room, `<bold>With a wave of their hand, ${player.name} unleashes a <red>fire</red></bold><yellow>b<bold>all</bold></yellow> <bold>at ${target.name}!</bold>`, [player, target]);
+      Broadcast.sayAt(player, '<bold>As you bark an Arcane Invocation, a <red>stream of universal solvent</red></bold><yellow>b<bold>all</bold></yellow> <bold>rains upon your target!</bold>');
+      Broadcast.sayAtExcept(player.room, `<bold>While barking an Arcane Invocation, ${player.name} sends forth <red>a rain of universal solvent</red></bold><yellow>b<bold>all</bold></yellow> <bold>upon ${target.name}!</bold>`, [player, target]);
       if (!target.isNpc) {
-        Broadcast.sayAt(target, `<bold>With a wave of their hand, ${player.name} unleashes a <red>fire</red></bold><yellow>b<bold>all</bold></yellow> <bold>at you!</bold>`);
+        Broadcast.sayAt(target, `<bold>While barking an Arcane Invocation, ${player.name} sends forth--from out of thin air!--<red>a stream of universal solvent</red></bold><yellow>b<bold>all</bold></yellow> <bold>at you!</bold>`);
       }
       damage.commit(target);
     },
 
     info: (player) => {
-      return `Hurl a magical fireball at your target dealing ${damagePercent}% of your Intellect as Fire damage.`;
+      return `Your solvent quickly begins dissolving alchemical bonds of your victim!`;
     }
   };
 };

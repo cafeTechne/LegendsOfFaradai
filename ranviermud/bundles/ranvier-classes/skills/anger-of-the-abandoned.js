@@ -1,50 +1,70 @@
 'use strict';
 
 /**
- * Basic mage spell
+ * Basic Psychomancy buff
  */
 module.exports = (srcPath) => {
-  const Broadcast = require(srcPath + 'Broadcast');
-  const Damage = require(srcPath + 'Damage');
+
   const SkillType = require(srcPath + 'SkillType');
-
-  const damagePercent = 100;
-  const manaCost = 20;
-
-  function getDamage(player) {
-    return player.getAttribute('intellect') * (damagePercent / 100);
-  }
+  const SkillFlag = require(srcPath + 'SkillFlag');
+  const Broadcast = require(srcPath + 'Broadcast');
+  
+  const interval = 2 * 60;
+  const threshold = 30;
+  const restorePercent = 50;
 
   return {
-    name: 'Fireball',
+    name: 'Anger of the Abandoned',
+    description: "You wallow in the depths of discord, focusing on pure abandonment.",
+    duration: 180 * 1000,
     type: SkillType.SPELL,
-    requiresTarget: true,
-    initiatesCombat: true,
-    resource: {
-      attribute: 'mana',
-      cost: manaCost,
-    },
-    cooldown: 10,
-
-    run: state => function (args, player, target) {
-      const damage = new Damage({
-        attribute: 'health',
-        amount: getDamage(player),
-        attacker: player,
-        type: 'physical',
-        source: this
-      });
-
-      Broadcast.sayAt(player, '<bold>With a wave of your hand, you unleash a <red>fire</red></bold><yellow>b<bold>all</bold></yellow> <bold>at your target!</bold>');
-      Broadcast.sayAtExcept(player.room, `<bold>With a wave of their hand, ${player.name} unleashes a <red>fire</red></bold><yellow>b<bold>all</bold></yellow> <bold>at ${target.name}!</bold>`, [player, target]);
-      if (!target.isNpc) {
-        Broadcast.sayAt(target, `<bold>With a wave of their hand, ${player.name} unleashes a <red>fire</red></bold><yellow>b<bold>all</bold></yellow> <bold>at you!</bold>`);
+    flags: [SkillFlag.PASSIVE],
+    cooldown: interval,
+    
+    modifier: {
+      attributes: {
+        // For `buff` we just want to take the character's current strength and
+        // increase it by this effect's `magnitude`
+        Anaerobic_Strength: function (current) {
+          return current + (current * (this.state.magnitude/100));
+        },
+        Aerobic_Strength: function (current) {
+          return current + (current * (this.state.magnitude/100));
+        },
+        Explosive_Strength: function (current) {
+          return current + (current * (this.state.magnitude/100));
+        }
       }
-      damage.commit(target);
+    },
+    info: function (player) {
+      return `You are seething with righteous indignation.`;
     },
 
-    info: (player) => {
-      return `Hurl a magical fireball at your target dealing ${damagePercent}% of your Intellect as Fire damage.`;
+    listeners: {
+      effectRefreshed: function (newEffect) {
+        // For this buff if someone tries to refresh the effect then just restart
+        // the duration timer
+        this.startedAt = Date.now();
+        Broadcast.sayAt(this.target, "You feel a spike of sharp resentment.");
+      },
+
+      effectActivated: function () {
+        // For buff we'll just send some text to the user
+        Broadcast.sayAt(this.target, "Self-righteous indignation courses through you!");
+      },
+
+      effectDeactivated: function () {
+        Broadcast.sayAt(this.target, "You feel the anger of abandonment leave you.");
+      }
     }
   };
+
+    Broadcast.sayAt(player, '<bold>You turn inward and focus on the pain and isolation of <red>Being</red></bold><yellow>b<bold>all</bold></yellow> <bold>as you clench your fists!</bold>');  
+    Broadcast.sayAtExcept(player.room, `<bold>${player.name} squints</bold>.`, [player, target]);
+    if (!target.isNpc) {
+      Broadcast.sayAt(target, '<bold>You turn inward and focus on the pain and isolation of <red>Being</red></bold>as you clench your fists!</bold>');
+    }
+  
+
+    
 };
