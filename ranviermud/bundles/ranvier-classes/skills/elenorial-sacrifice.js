@@ -16,7 +16,7 @@ module.exports = (srcPath) => {
   }
 
   return {
-    name: 'Fireball',
+    name: 'Elenorial Sacrifice',
     type: SkillType.SPELL,
     requiresTarget: true,
     initiatesCombat: true,

@@ -7,10 +7,10 @@ module.exports = srcPath => {
         description: "Followers of this more socially accepted form of blood magic fuel their sorcery with the blood of the guilty and chaotic. Sorcerers of this esoteric school are most often also ordained priests or Paladins of Vengeance. The vitae they steal from their opponents powers their Enthalpic oaths.",
 
         abilityTable: {
-            1: { skills: ['Carnage'] },
-            1: { skills: ['Oath Keeper'] },
-            1: { skills: ['Sanguinara'] },
-            2: { skills: ['Elenorial Sacrifice'] },
+            1: { spells: ['carnage'] },
+            1: { spells: ['oath-keeper'] },
+            1: { spells: ['sanguinara'] },
+            2: { spells: ['elenorial-sacrifice'] },
         },
 
         setupPlayer: player => {

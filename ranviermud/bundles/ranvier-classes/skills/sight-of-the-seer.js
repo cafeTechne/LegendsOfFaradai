@@ -16,7 +16,7 @@ module.exports = (srcPath) => {
   }
 
   return {
-    name: 'Fireball',
+    name: 'Sight of the Seer',
     type: SkillType.SPELL,
     requiresTarget: true,
     initiatesCombat: true,

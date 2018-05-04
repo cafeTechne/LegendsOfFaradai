@@ -8,9 +8,9 @@ module.exports = srcPath => {
 
         abilityTable: {
             1: { spells: ['arcane-shield'] },
-            1: { spells: ['elemental-cloak'] },
-            1: { spells: ['wall-of-force'] },
-            2: { spells: ['warding-field'] },
+            2: { spells: ['elemental-cloak'] },
+            3: { spells: ['wall-of-force'] },
+            4: { spells: ['warding-field'] },
         },
 
         setupPlayer: player => {

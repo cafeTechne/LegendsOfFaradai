@@ -16,7 +16,7 @@ module.exports = (srcPath) => {
   }
 
   return {
-    name: 'Fireball',
+    name: 'Mana Wave',
     type: SkillType.SPELL,
     requiresTarget: true,
     initiatesCombat: true,

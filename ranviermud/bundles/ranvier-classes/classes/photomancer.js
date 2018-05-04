@@ -8,9 +8,9 @@ module.exports = srcPath => {
 
         abilityTable: {
             1: { spells: ['blinding-flash'] },
-            1: { spells: ['ion-blast'] },
-            1: { spells: ['suture'] },
-            2: { spells: ['photoionic-beam'] },
+            2: { spells: ['ion-blast'] },
+            3: { spells: ['suture'] },
+            4: { spells: ['photoionic-beam'] },
         },
 
         setupPlayer: player => {

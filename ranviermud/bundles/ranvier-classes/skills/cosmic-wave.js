@@ -16,7 +16,7 @@ module.exports = (srcPath) => {
   }
 
   return {
-    name: 'Fireball',
+    name: 'Cosmic Wave',
     type: SkillType.SPELL,
     requiresTarget: true,
     initiatesCombat: true,

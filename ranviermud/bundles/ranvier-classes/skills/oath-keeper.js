@@ -16,7 +16,7 @@ module.exports = (srcPath) => {
   }
 
   return {
-    name: 'Fireball',
+    name: 'Oath Keeper',
     type: SkillType.SPELL,
     requiresTarget: true,
     initiatesCombat: true,

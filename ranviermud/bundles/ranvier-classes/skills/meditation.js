@@ -16,7 +16,7 @@ module.exports = (srcPath) => {
   }
 
   return {
-    name: 'Fireball',
+    name: 'Meditation',
     type: SkillType.SPELL,
     requiresTarget: true,
     initiatesCombat: true,
@@ -44,7 +44,7 @@ module.exports = (srcPath) => {
     },
 
     info: (player) => {
-      return `Hurl a magical fireball at your target dealing ${damagePercent}% of your Intellect as Fire damage.`;
+      return `Hurl a magical Meditation at your target dealing ${damagePercent}% of your Intellect as Fire damage.`;
     }
   };
 };

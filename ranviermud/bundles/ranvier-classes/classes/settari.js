@@ -8,9 +8,9 @@ module.exports = srcPath => {
 
         abilityTable: {
             1: { spells: ['sanguinara'] },
-            1: { spells: ['thick-blood'] },
-            1: { spells: ['blood-shadow'] },
-            2: { spells: ['blood-decay'] },
+            2: { spells: ['thick-blood'] },
+            3: { spells: ['blood-shadow'] },
+            4: { spells: ['blood-decay'] },
         },
 
         setupPlayer: player => {

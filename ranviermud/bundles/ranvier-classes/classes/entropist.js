@@ -8,9 +8,9 @@ module.exports = srcPath => {
 
         abilityTable: {
             1: { spells: ['thermal-disequilibrium'] },
-            1: { spells: ['cosmic-wave'] },
-            1: { spells: ['gravity-hole'] },
-            2: { spells: ['dismiss-summoned-beings'] },
+            2: { spells: ['cosmic-wave'] },
+            3: { spells: ['gravity-hole'] },
+            4: { spells: ['dismiss-summoned-beings'] },
         },
 
         setupPlayer: player => {

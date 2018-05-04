@@ -8,9 +8,9 @@ module.exports = srcPath => {
 
         abilityTable: {
             1: { spells: ['de-ja-vu'] },
-            1: { spells: ['astral-projection'] },
-            1: { spells: ['astral-pulse'] },
-            2: { spells: ['sight-of-the-seer'] },
+            2: { spells: ['astral-projection'] },
+            3: { spells: ['astral-pulse'] },
+            4: { spells: ['sight-of-the-seer'] },
         },
 
         setupPlayer: player => {

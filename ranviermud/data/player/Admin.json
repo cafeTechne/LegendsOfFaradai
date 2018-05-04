@@ -151,13 +151,13 @@
         "type": "regen",
         "unique": true
       },
-      "elapsed": 3665455,
+      "elapsed": 4003526,
       "id": "regen",
       "remaining": null,
       "state": {
         "magnitude": 15,
-        "lastTick": 1611,
-        "ticks": 1219
+        "lastTick": 2539,
+        "ticks": 1331
       }
     }
   ],

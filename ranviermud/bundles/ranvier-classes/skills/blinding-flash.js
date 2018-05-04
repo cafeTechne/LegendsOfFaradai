@@ -16,7 +16,7 @@ module.exports = (srcPath) => {
   }
 
   return {
-    name: 'Fireball',
+    name: 'Blinding Flash',
     type: SkillType.SPELL,
     requiresTarget: true,
     initiatesCombat: true,

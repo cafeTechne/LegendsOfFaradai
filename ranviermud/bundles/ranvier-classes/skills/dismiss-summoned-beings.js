@@ -16,7 +16,7 @@ module.exports = (srcPath) => {
   }
 
   return {
-    name: 'Fireball',
+    name: 'Dismiss Summoned Beings',
     type: SkillType.SPELL,
     requiresTarget: true,
     initiatesCombat: true,

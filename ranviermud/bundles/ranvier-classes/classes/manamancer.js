@@ -7,10 +7,10 @@ module.exports = srcPath => {
         description: "Manamancers study the Channeler domain that focuses on amplifying local mana fields to make the spell casting of those around the caster more powerful. They have also mastered the ability of channeling mana into raw energy for attacks. The secrets of the Manamancer are taught only to members of proven houses.",
 
         abilityTable: {
-            1: { skills: ['mana-beam'] },
-            1: { skills: ['manawave'] },
-            1: { skills: ['share-energy'] },
-            2: { skills: ['mana-field-anamoly'] },
+            1: { spells: ['mana-beam'] },
+            2: { spells: ['manawave'] },
+            3: { spells: ['share-energy'] },
+            4: { spells: ['mana-field-anomaly'] },
         },
 
         setupPlayer: player => {

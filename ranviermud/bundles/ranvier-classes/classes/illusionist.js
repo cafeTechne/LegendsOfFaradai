@@ -8,9 +8,9 @@ module.exports = srcPath => {
 
         abilityTable: {
             1: { spells: ['field-distortion'] },
-            1: { spells: ['dispel-discurse'] },
-            1: { spells: ['invisibility'] },
-            2: { spells: ['invisibility-field'] },
+            2: { spells: ['dispel-discurse'] },
+            3: { spells: ['invisibility'] },
+            4: { spells: ['invisibility-field'] },
         },
 
         setupPlayer: player => {

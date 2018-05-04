@@ -16,7 +16,7 @@ module.exports = (srcPath) => {
   }
 
   return {
-    name: 'Fireball',
+    name: 'Teletransplanar Wave',
     type: SkillType.SPELL,
     requiresTarget: true,
     initiatesCombat: true,

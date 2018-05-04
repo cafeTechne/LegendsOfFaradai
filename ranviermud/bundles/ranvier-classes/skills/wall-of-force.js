@@ -16,7 +16,7 @@ module.exports = (srcPath) => {
   }
 
   return {
-    name: 'Fireball',
+    name: 'Wall of Force',
     type: SkillType.SPELL,
     requiresTarget: true,
     initiatesCombat: true,

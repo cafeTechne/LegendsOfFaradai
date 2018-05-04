@@ -16,7 +16,7 @@ module.exports = (srcPath) => {
   }
 
   return {
-    name: 'Fireball',
+    name: 'De ja vu',
     type: SkillType.SPELL,
     requiresTarget: true,
     initiatesCombat: true,

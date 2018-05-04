@@ -16,7 +16,7 @@ module.exports = (srcPath) => {
   }
 
   return {
-    name: 'Fireball',
+    name: 'Reign of the Nightmare God',
     type: SkillType.SPELL,
     requiresTarget: true,
     initiatesCombat: true,

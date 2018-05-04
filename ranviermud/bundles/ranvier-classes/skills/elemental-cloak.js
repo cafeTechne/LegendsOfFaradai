@@ -16,7 +16,7 @@ module.exports = (srcPath) => {
   }
 
   return {
-    name: 'Fireball',
+    name: 'Elemental Cloak',
     type: SkillType.SPELL,
     requiresTarget: true,
     initiatesCombat: true,

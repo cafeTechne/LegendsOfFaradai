@@ -16,7 +16,7 @@ module.exports = (srcPath) => {
   }
 
   return {
-    name: 'Fireball',
+    name: 'Slumber of the Ancient Psychomancer King',
     type: SkillType.SPELL,
     requiresTarget: true,
     initiatesCombat: true,

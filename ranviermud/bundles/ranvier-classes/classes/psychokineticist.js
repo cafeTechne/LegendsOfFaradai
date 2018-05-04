@@ -14,9 +14,9 @@ module.exports = srcPath => {
 
     abilityTable: {
       1: { spells: ['telekinetic-dash'] },
-      1: { spells: ['bind'] },
-      1: { spells: ['telekinetic-blast'] },
-      2: { spells: ['teletransplanar-wave'] },
+      2: { spells: ['bind'] },
+      3: { spells: ['telekinetic-blast'] },
+      4: { spells: ['teletransplanar-wave'] },
     },
 
     setupPlayer: player => {

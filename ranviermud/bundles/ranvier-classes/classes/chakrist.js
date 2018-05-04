@@ -8,9 +8,9 @@ module.exports = srcPath => {
 
         abilityTable: {
             1: { spells: ['transcendent-balance'] },
-            1: { spells: ['meditation'] },
-            1: { spells: ['chakra-beam'] },
-            2: { spells: ['transubstantiation'] },
+            2: { spells: ['meditation'] },
+            3: { spells: ['chakra-beam'] },
+            4: { spells: ['transubstantiation'] },
         },
 
         setupPlayer: player => {

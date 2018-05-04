@@ -8,12 +8,12 @@ module.exports = srcPath => {
 
         abilityTable: {
             1: { skills: ['howl'] },
-            1: { skills: ['lunge'] },
-            1: { skills: ['rend'] },
-            1: { skills: ['bite'] },
-            1: { skills: ['hide']},
-            1: { skills: ['stalk']},
-            2: { skills: ['frenzy'] }
+            2: { skills: ['lunge'] },
+            3: { skills: ['rend'] },
+            4: { skills: ['bite'] },
+            5: { skills: ['hide']},
+            6: { skills: ['stalk']},
+            7: { skills: ['frenzy'] }
         },
 
         setupPlayer: player => {

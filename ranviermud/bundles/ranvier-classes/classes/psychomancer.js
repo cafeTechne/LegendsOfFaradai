@@ -8,13 +8,13 @@ module.exports = srcPath => {
 
     abilityTable: {
       1: { spells: ['intimidating-shout'] },
-      1: { spells: ['anger-of-the-abandoned'] },
-      1: { spells: ['reign-of-the-nightmare-god'] },
-      2: { spells: ['slumber-of-the-ancient-psychomancer-king'] },
+      2: { spells: ['anger-of-the-abandoned'] },
+      3: { spells: ['reign-of-the-nightmare-god'] },
+      4: { spells: ['slumber-of-the-ancient-psychomancer-king'] },
     },
 
     setupPlayer: player => {
-      player.addAttribute('psyche', 100);
+      player.addAttribute('mana', 100);
       player.prompt = '[ %health.current%/%health.max% <b>hp</b> %mana.current%/%mana.max% <b>mana</b> ]';
     }
   };

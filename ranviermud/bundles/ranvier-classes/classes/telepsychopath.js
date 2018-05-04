@@ -8,9 +8,9 @@ module.exports = srcPath => {
 
         abilityTable: {
             1: { spells: ['sedate'] },
-            1: { spells: ['hypomania'] },
-            1: { spells: ['dissociative-field'] },
-            2: { spells: ['dissociate-identity'] },
+            2: { spells: ['hypomania'] },
+            3: { spells: ['dissociative-field'] },
+            4: { spells: ['dissociate-identity'] },
         },
 
         setupPlayer: player => {
