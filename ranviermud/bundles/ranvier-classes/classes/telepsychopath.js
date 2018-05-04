@@ -7,10 +7,10 @@ module.exports = srcPath => {
         description: "Telepsychopaths are practitioners of the ancient art of counseling and they are known for healing persons afflicted with mental illness.",
 
         abilityTable: {
-            1: { skills: ['Sedate'] },
-            1: { skills: ['Hypomania'] },
-            1: { skills: ['Dissociative Field'] },
-            2: { skills: ['Dissociate Identity'] },
+            1: { spells: ['sedate'] },
+            1: { spells: ['hypomania'] },
+            1: { spells: ['dissociative-field'] },
+            2: { spells: ['dissociate-identity'] },
         },
 
         setupPlayer: player => {

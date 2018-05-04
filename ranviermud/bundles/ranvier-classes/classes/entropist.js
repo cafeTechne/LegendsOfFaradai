@@ -7,10 +7,10 @@ module.exports = srcPath => {
         description: "The study of the fundamental law of entropy. Entropy is not so much a vector as an all-pervasive tendency for things to fall apart. Entropists tend to the chaotic and can range from Decayers to Anarchists.",
 
         abilityTable: {
-            1: { skills: ['Thermal Disequilibrium'] },
-            1: { skills: ['Cosmic Wave'] },
-            1: { skills: ['Gravity Hole'] },
-            2: { skills: ['Dismiss Summoned Beings'] },
+            1: { spells: ['thermal-disequilibrium'] },
+            1: { spells: ['cosmic-wave'] },
+            1: { spells: ['gravity-hole'] },
+            2: { spells: ['dismiss-summoned-beings'] },
         },
 
         setupPlayer: player => {

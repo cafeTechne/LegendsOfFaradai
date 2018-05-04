@@ -7,10 +7,10 @@ module.exports = srcPath => {
         description: "Warders are a scholars of arcane magic and diplomats by trade. They prefer non-violent resolution, but are able to hold their own. Their focus is on the development and advancement of defensive magic and the dissolution of curses and everything demonic. The Warders have no qualms with negotiating with practitioners of Necromancy or Golemancy, despite their misgivings about members of other professions.",
 
         abilityTable: {
-            1: { skills: ['Arcane Shield'] },
-            1: { skills: ['Elemental Barrier'] },
-            1: { skills: ['Wall of Force'] },
-            2: { skills: ['Warding Field'] },
+            1: { spells: ['arcane-shield'] },
+            1: { spells: ['elemental-cloak'] },
+            1: { spells: ['wall-of-force'] },
+            2: { spells: ['warding-field'] },
         },
 
         setupPlayer: player => {

@@ -13,10 +13,10 @@ module.exports = srcPath => {
     description: 'Psychokineticists derive their name from their ability to control space-time with their determination and will (and native attunement to a cluster of transcendental vectors). Psychokineticists are more dogged and grittier than any other profession given the absolute sacrifice and focus required for advancement in their esoteric art. The activity itself is reminiscent of weight lifting, a practice of exerting an intense short term burst of explosive force.',
 
     abilityTable: {
-      1: { skills: ['Telekinetic Dash'] },
-      1: { skills: ['Bind'] },
-      1: { skills: ['Telekinetic Blast'] },
-      2: { skills: ['Teletransplanar Wave'] },
+      1: { spells: ['telekinetic-dash'] },
+      1: { spells: ['bind'] },
+      1: { spells: ['telekinetic-blast'] },
+      2: { spells: ['teletransplanar-wave'] },
     },
 
     setupPlayer: player => {

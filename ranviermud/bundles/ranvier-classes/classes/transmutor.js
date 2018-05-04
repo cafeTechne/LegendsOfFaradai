@@ -7,10 +7,10 @@ module.exports = srcPath => {
         description: "The domain of Transmutor is a study of vector transformations invoking the flux of the ever-changing river of Being. They are an odd lot of mystics and it is quite often hard to make sense of their poetic ramblings.",
 
         abilityTable: {
-            1: { skills: ['Skin to Scales'] },
-            1: { skills: ['Earth to Acid'] },
-            1: { skills: ['Lighten Elements'] },
-            2: { skills: ['Alkahest'] },
+            1: { spells: ['skin-to-scales'] },
+            1: { spells: ['earth-to-acid'] },
+            1: { spells: ['lighten-elements'] },
+            2: { spells: ['alkahest'] },
         },
 
         setupPlayer: player => {

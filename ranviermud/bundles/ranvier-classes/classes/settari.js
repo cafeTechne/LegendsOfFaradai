@@ -7,10 +7,10 @@ module.exports = srcPath => {
         description: "Followers of this reviled practice of blood magic must fuel their sorcery with the blood of innocence to channel their Entropic spell matrices.",
 
         abilityTable: {
-            1: { skills: ['Sanguinara'] },
-            1: { skills: ['Thick Blood'] },
-            1: { skills: ['Blood Shadow'] },
-            2: { skills: ['Blood Decay'] },
+            1: { spells: ['sanguinara'] },
+            1: { spells: ['thick-blood'] },
+            1: { spells: ['blood-shadow'] },
+            2: { spells: ['blood-decay'] },
         },
 
         setupPlayer: player => {

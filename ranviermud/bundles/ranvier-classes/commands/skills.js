@@ -7,7 +7,7 @@ module.exports = srcPath => {
   const Logger = require(srcPath + 'Logger');
 
   return {
-    aliases: ['abilities', 'spells'],
+    aliases: ['abilities', 'spells', 'skill', 'skil', 'ski', 'abil', 'abili', 'abilit', 'abiliti', 'abilitie'],
     command: state => (args, player) => {
       const say = message => B.sayAt(player, message);
       say("<b>" + B.center(80, 'Abilities', 'green'));

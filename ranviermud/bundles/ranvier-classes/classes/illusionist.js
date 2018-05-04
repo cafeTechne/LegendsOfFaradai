@@ -7,10 +7,10 @@ module.exports = srcPath => {
         description: "Masters of manipulating the vectors of meaning, they create empowered webs of Intentionality that enmesh all subjects in the casters apperceptive field. They can distort meaning making across cultural contexts using archetypal modulation to standardize effects in real time--the master Illusionist can contort other casters into shredding theirselves apart by instantiating raw mana into existential doubt and protophysical uncertainty within their targets.",
 
         abilityTable: {
-            1: { skills: ['Field Distortion'] },
-            1: { skills: ['Dispel & Discurse'] },
-            1: { skills: ['Invisibility'] },
-            2: { skills: ['Invisibility Field'] },
+            1: { spells: ['field-distortion'] },
+            1: { spells: ['dispel-discurse'] },
+            1: { spells: ['invisibility'] },
+            2: { spells: ['invisibility-field'] },
         },
 
         setupPlayer: player => {
