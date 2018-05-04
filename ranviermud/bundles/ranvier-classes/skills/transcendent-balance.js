@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Basic mage spell
+ * Chakrist spell
  */
 module.exports = (srcPath) => {
   const Broadcast = require(srcPath + 'Broadcast');

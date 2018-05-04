@@ -35,7 +35,7 @@ class Character extends Metadatable(EventEmitter) {
     this.equipment = data.equipment || new Map();
     this.combatants = new Set();
     this.combatData = {};
-    this.level = data.level || 1;
+    this.level = data.level || 4; //changed from 1 to 4 for convention with skill system, cafetechne
     this.room = data.room || null;
     this.attributes = new Attributes(data.attributes || null);
 
