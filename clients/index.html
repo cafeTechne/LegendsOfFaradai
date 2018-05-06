@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<!--
+
+index.html
+Main HTML page for the client-side.
+For use with MIT 6.005 Spring 2008 Project 6.
+
+Author: Aseem Kishore <aseem.kishore@gmail.com>
+License: none. Students are free to use and modify any portion of this
+code, as long as they maintain this header.
+
+-->
+
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Akishore's MUD</title>
+  
+  <!-- general styles, not set by dynamic constraints -->
+  <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+  
+  <!-- anything that needs to be dynamically written by the server -->
+  <script type="text/javascript">
+    // <![CDATA[
+    
+    // unique client ID. a default one is provided below.
+    // server should use regexp to search for the two surrounding markers,
+    // and replace the entire text with a randomly generated number.
+    var CLIENT_ID = /*CLIENT_ID*/ 123456789 /*CLIENT_ID*/;
+    
+    // ]]>
+  </script>
+
+  <!-- our javascript code. order of scripts here matters! -->
+  <!-- prototype.js is a powerful Javascript library, see prototypejs.org -->
+  <script type="text/javascript" src="prototype.js"></script>
+  <script type="text/javascript" src="constants.js"></script>
+  <script type="text/javascript" src="model.js"></script>
+  <script type="text/javascript" src="scrollpane.js"></script>
+  <script type="text/javascript" src="view.js"></script>
+  <script type="text/javascript" src="controller.js"></script>
+
+</head>
+
+
+<body>
+
+<form id="form">
+<div id="body">
+
+  <div id="output">
+    <div id="images">
+      <!-- images go here -->
+    </div>
+    <div id="messages">
+      <!-- messages goe here -->
+    </div>
+  </div>
+  
+  <div id="input">
+    <input id="text" type="text" />
+    <input id="send" type="submit" value="Send" />
+  </div>
+
+</div>
+</form>
+
+</body>
+
+
+</html>

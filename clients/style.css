@@ -1,0 +1,93 @@
+/*************************************************************************
+ style.css
+ Stylesheet for client-side code.
+ For use with MIT 6.005 Spring 2008 Project 6.
+ 
+ Author: Aseem Kishore <akishore@mit.edu>
+ License: none. Students are free to use and modify any portion of this
+ code, as long as they maintain this header.
+ 
+ Dependencies:
+ - index.html
+ 
+ *************************************************************************/
+
+
+/* General layout (sizing occurs in javascript) */
+
+#body {
+	width: 799px;
+	position: relative; /* so its children can be positioned absolutely */
+}
+
+#output {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+
+#input {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+#messages {
+	overflow: auto;
+}
+
+#images, #messages {
+	padding: 10px;
+}
+
+#text {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#messages, #text, #send {
+	border-width: 1px;
+}
+
+
+/* Minor look and feel things */
+
+html {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 13px;
+}
+
+div, img {
+	display: block;
+	margin-left: auto; /* centers element */
+	margin-right: auto;
+}
+
+#messages, #text {
+	border: 1px inset black;
+}
+
+.command {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+.response, .chat, .notification {
+	display: block;
+	padding-left: 1em;
+	margin-bottom: 1em;
+}
+
+.response {
+	/* no additional formatting needed */
+}
+
+.chat {
+	font-style: italic;
+	color: #3030b0;
+}
+
+.notification {
+	color: #808080;
+}
